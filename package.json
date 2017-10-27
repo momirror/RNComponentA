@@ -5,10 +5,10 @@
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"test": "jest",
-		"bundle-dir":"node scripts/mkdir",
-		"bundle-ios-index":"node node_modules/react-native/local-cli/cli.js bundle --entry-file index.js  --platform ios --dev false --bundle-output ./ios/bundle/index.ios.jsbundle --assets-dest ./ios/bundle",
-		"bundle-ios-common":"node node_modules/react-native/local-cli/cli.js bundle --entry-file common.js  --platform ios --dev false --bundle-output ./ios/bundle/common.jsbundle",
-		"bundle-ios-patch":"node scripts/make-patch"
+		"bundle-ios-index":"node scripts/bundle-ios-index",
+		"bundle-ios-common":"node scripts/bundle-ios-common",
+		"bundle-ios-patch":"node scripts/patch-ios",
+		"patch-ios-auto":"node scripts/patch-ios-auto"
 	},
 	"dependencies": {
 		"react": "16.0.0-beta.5",

@@ -13,3 +13,7 @@ process.exec('python scripts/patch.py ios/bundle/common.jsbundle ios/bundle/inde
         console.log(stdout);
     }
 });
+
+process.execSync('open ios/bundle');
+
+
