@@ -1,0 +1,3 @@
+rootProject.name = 'RNComponentA'
+
+include ':app'
