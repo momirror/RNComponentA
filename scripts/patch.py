@@ -48,7 +48,7 @@ lastestText = readFileToText(lastest)
 patch = dmp.patch_make(referenceText, lastestText)
 patchText = dmp.patch_toText(patch)
 
-patchFilePath = os.getcwd() + '/ios/bundle/business.patch'
+patchFilePath = os.getcwd() + '/ios/bundle/DeviceInfoScreen.patch'
 print('patch location: ' + patchFilePath)
 patchFile = open(patchFilePath,"w")
 patchFile.write(patchText)
