@@ -1,14 +1,13 @@
 import React,{Component} from 'react';
 import {Button,View,Text,Image,StyleSheet,NativeModules,AppRegistry} from 'react-native';
 
-export default class DeviceInfoScreen extends Component {
+class DeviceInfoScreen extends Component {
 
     showDeviceInfo = ()=>{
-        console.log('device info');
         const DeviceInfoService = NativeModules.DeviceInfoService;
-        DeviceInfoService.getDeviceInfo((error,content) => {
-            alert(content);
-        });
+        // DeviceInfoService.getDeviceInfo((error,content) => {
+        //     alert(content);
+        // });
     }
 
     render(){
@@ -34,5 +33,7 @@ const styles = StyleSheet.create({
         height:200,
     }
 });
+
+// export {DeviceInfoScreen};
 
 AppRegistry.registerComponent('DeviceInfoScreen', () => DeviceInfoScreen);
